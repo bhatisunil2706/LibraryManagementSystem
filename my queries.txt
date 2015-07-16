@@ -1,0 +1,29 @@
+1.CREATE TABLE  "LOGIN" 
+   (	"LOGIN_ID" VARCHAR2(50), 
+	"PASSWORD" VARCHAR2(50)
+   )
+2.CREATE TABLE  "BOOKS" 
+   (	"S_NO" NUMBER(10,0) NOT NULL ENABLE, 
+	"SUBJECT" VARCHAR2(50) NOT NULL ENABLE, 
+	"TITLE" VARCHAR2(100) NOT NULL ENABLE, 
+	"AUTHOR" VARCHAR2(50) NOT NULL ENABLE, 
+	"TOTAL_BOOKS" NUMBER(10,0) NOT NULL ENABLE, 
+	"AVAILABLE_BOOKS" NUMBER(10,0), 
+	 PRIMARY KEY ("S_NO") ENABLE
+   )
+3.create table issuestudent
+(
+  rollnumber number(10) not null,
+  name varchar2(20) not null,
+  bookserialnumber number(10) not null,
+  issuedate varchar2(20) not null,
+  submitdate varchar2(20)
+)
+4.create table issuefaculty
+(
+  dept varchar2(20)not null,
+  fid number(10) not null,
+  bookserialnumber number(10),
+  issuedate varchar2(20) not null,
+  submitdate varchar2(20)
+)
